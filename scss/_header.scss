@@ -1,0 +1,47 @@
+@mixin fontSizes($fsize, $fweight){
+    font-size: $fsize;
+    font-weight: $fweight;
+}
+header{
+    margin-bottom: 180px;
+    @media #{$sm}{
+        margin-bottom: 280px;
+    }
+    @media #{$md}{
+        margin-bottom: 280px;
+    }
+    @media #{$xs}{
+        margin-bottom: 280px;
+    }
+    background-color: lightseagreen;
+    grid-area: header;
+    display: flex;
+    .headercss{
+        background-image:linear-gradient(to right, lightseagreen, $bg_lightbluegreen);
+        width: 100%;
+        .logo{
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        color:#09134d;
+                        @include fontSizes(20px, 600);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .header-btn{
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            a{
+                font-weight: bold; width:80%;
+            }
+        }
+    }
+}

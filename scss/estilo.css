@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c6f3e8;
+}
+
+header {
+  background-color: lightseagreen;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .headercss {
+  background-image: -webkit-gradient(linear, left top, right top, from(lightseagreen), to(#acecc9));
+  background-image: linear-gradient(to right, lightseagreen, #acecc9);
+  width: 100%;
+}
+
+header .headercss .logo {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headercss nav ul li a {
+  color: #09134d;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+header .headercss .header-btn {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headercss .header-btn a {
+  font-weight: bold;
+  width: 80%;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .portada .h1top, main .portada .h1Galeria {
+  color: #079b7b;
+  font-size: 3.5rem;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+main .portada .h1medium {
+  color: #0da6ac;
+  font-size: 3.5rem;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+main .portada .h1bottom {
+  color: #057c76;
+  font-size: 3.5rem;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+main .h1Galeria {
+  font-weight: bold;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div a {
+  font-size: 40px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=estilo.css.map */
